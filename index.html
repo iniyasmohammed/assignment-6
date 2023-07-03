@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-box">
+    <label for="">enter your first name</label>
+    <input type="text" value="" name="fname" id="fname" onkeyup="validatename('namewarning')">
+    <p id="namewarning"></p>
+
+    <label for="">enter your last name</label>
+    <input type="text" value="" name="lname" id="lname" onkeyup="validatelname('lnamewarning')">
+    <p id="lnamewarning"></p>
+
+    <label for="">enter your email address</label>
+    <input type="text" value="" name="email" id="email" onblur="validateemail('emailwarning')">
+    <p id="emailwarning"></p>
+
+    <label for="">enter your Experience in years</label>
+    <input type="text" value="" name="exp" id="exp" onblur="validateexp('expwarning')">
+    <p id="expwarning"></p>
+
+    <label for="">enter your mobile number</label>
+    <span><input type="text" value="+91" disabled style="width: 20px;">
+    <input type="text" value="" name="mobnum" id="mobnum" onblur="validatenumber('numberwarning')">
+    </span>
+    <p id="numberwarning"></p>
+
+    <button type="submit" onclick="submitAll()">submit</button>
+
+    <P id="wlcmMsg"></P>
+    <p id="rplceMsg1"></p>
+    <p id="newMsg"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
